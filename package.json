@@ -1,0 +1,38 @@
+{
+  "name": "lostserver",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node index.js",
+    "mongo": "mongod -f mongodb/mongo.conf"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "chinesegen": "^0.3.3",
+    "cors": "^2.8.3",
+    "eslint": "3.19.0",
+    "express": "^4.15.3",
+    "formidable": "^1.1.1",
+    "fs-extra": "3.0.1",
+    "glob": "^7.1.2",
+    "helmet": "^3.6.1",
+    "hookding": "0.0.2",
+    "jpush-sdk": "^3.4.1",
+    "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.4",
+    "log4js": "^1.1.1",
+    "moment": "^2.18.1",
+    "mongoose": "^4.11.1",
+    "node-uuid": "^1.4.8",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "qiniu": "~6.1.9",
+    "serve-favicon": "^2.4.3",
+    "superagent": "^3.5.2",
+    "swagger-jsdoc": "^1.9.7",
+    "swagger-tools": "^0.10.1",
+    "url-loader": "0.5.8",
+    "urlencode": "^1.1.0"
+  }
+}

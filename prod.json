@@ -1,0 +1,19 @@
+
+
+{
+  "apps": [
+    {
+      "name": "lost-prod",
+      "script": "./scripts/server.js",
+      "watch": true,
+      "ignore_watch": [ "node_modules", "files", "public", "logs", "mongodb", "build", ".idea/", ".git"],
+      "max_memory_restart": "250M",
+      "instances": 4,
+      "exec_mode": "cluster",
+      "env": {
+        "NODE_ENV": "prod",
+        "PORT": 6677
+      }
+    }
+  ]
+}
