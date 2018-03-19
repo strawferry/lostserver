@@ -334,7 +334,7 @@ router.post('/repost/:id', (req, res, next) => {
                 mainImage = images[0],
                 user = req.user._id;
 
-            Post.findById(id)
+            Post.findById(req.params._id)
                 .populate("user", notoken)
                 .exec((err, post)=>{
                     if (err){ return next(err)}

@@ -62,7 +62,8 @@ User.findOne(function (err, user) {
         }
 
 
-        console.log('-----生成post成功--------可以退出了---------');
+        console.log('-----生成post成功--------退出---------');
+        return process.exit();
     }else{
         for (let i = 0; i < 11; i++) {
             if(i === 0){
@@ -85,7 +86,8 @@ User.findOne(function (err, user) {
                 user.save();
             }
         }
-        console.log('-----生成用户成功--------------退出再次运行本代码生成 post-------------');
+        console.log('-----生成用户成功--------------再次运行本代码生成 post-------------');
+        return process.exit();
     }
 
 });
